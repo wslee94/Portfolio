@@ -10,6 +10,9 @@ const nextConfig = {
     loader: "imgix",
     path: BASE_PATH,
   },
+  env: {
+    basePath: IS_PROD ? BASE_PATH : BASE_PATH,
+  },
 };
 
 module.exports = nextConfig;
