@@ -1,4 +1,3 @@
-import Head from "next/head";
 import About from "../components/template/about";
 import Carreer from "../components/template/carreer";
 import Project from "../components/template/project";
