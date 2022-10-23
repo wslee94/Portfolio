@@ -3,15 +3,39 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
-}
+
+  .container {
+    position: relative;
+    .section {
+      width: 100%;
+      height: 100%;
+      overflow-y: scroll;
+    
+      &::-webkit-scrollbar {
+        width: 4px;
+      }
+      &::-webkit-scrollbar-thumb {
+        border-radius: 2px;
+        background: #ccc;
+      }
+    }
+  
+  }
 
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  &::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera*/
   }
 }
+
+// @media (prefers-color-scheme: dark) {
+//   html {
+//     color-scheme: dark;
+//   }
+//   body {
+//     color: white;
+//     background: black;
+//   }
+// }
