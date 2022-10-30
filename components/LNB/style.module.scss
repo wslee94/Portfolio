@@ -34,6 +34,10 @@
   background: black;
   opacity: 0.5;
 
+  &.active {
+    opacity: 1;
+  }
+
   @include hover {
     &:hover {
       opacity: 1;
