@@ -1,3 +1,5 @@
+@import "../../styles/mixin.scss";
+
 .LNBContainer {
   position: fixed;
   top: 50%;
@@ -6,12 +8,24 @@
   flex-direction: column;
   transform: translateY(-50%);
   z-index: 1000;
+
+  @include mobile {
+    flex-direction: row;
+    top: 0;
+    left: unset;
+    right: 0;
+    transform: translateY(0);
+  }
 }
 
 .LNBItem {
   display: flex;
   align-items: center;
   gap: 5px;
+
+  @include mobile {
+    flex-direction: column;
+  }
 }
 
 .LNBButton {
@@ -19,15 +33,26 @@
   height: 34px;
   background: black;
   opacity: 0.5;
-  &.active,
-  &:hover {
-    opacity: 1;
 
-    & ~ .LNBTooltip {
-      display: block;
+  @include hover {
+    &:hover {
+      opacity: 1;
+      & ~ .LNBTooltip {
+        display: block;
+      }
     }
   }
- 
+  
+  @include mobile {
+    @include hover {
+      &:hover {
+        opacity: 1;
+        & ~ .LNBTooltip {
+          display: none;
+        }
+      }
+    }
+  }
 }
 
 .LNBTooltip {
