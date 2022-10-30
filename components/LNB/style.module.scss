@@ -1,0 +1,43 @@
+.LNBContainer {
+  position: fixed;
+  top: 50%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+.LNBItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.LNBButton {
+  width: 34px;
+  height: 34px;
+  background: black;
+  opacity: 0.5;
+  &.active,
+  &:hover {
+    opacity: 1;
+
+    & ~ .LNBTooltip {
+      display: block;
+    }
+  }
+ 
+}
+
+.LNBTooltip {
+  display: none;
+  padding: 6px 12px;
+  background: #191919;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 12px;
+  color: #FFFFFF;
+}
