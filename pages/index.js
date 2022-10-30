@@ -11,19 +11,19 @@ export default function Home() {
 
   return (
     <div className="container">
-      <FullPage scrollOffset={scrollOffset}>
+      <FullPage id="about" scrollOffset={scrollOffset}>
         <About />
       </FullPage>
-      <FullPage scrollOffset={scrollOffset}>
+      <FullPage id="career" scrollOffset={scrollOffset}>
         <Career />
       </FullPage>
-      <FullPage scrollOffset={scrollOffset}>
+      <FullPage id="project" scrollOffset={scrollOffset}>
         <Project />
       </FullPage>
-      <FullPage scrollOffset={scrollOffset}>
+      <FullPage id="gallery" scrollOffset={scrollOffset}>
         <Gallery />
       </FullPage>
-      <FullPage scrollOffset={scrollOffset}>
+      <FullPage id="experience" scrollOffset={scrollOffset}>
         <Experience />
       </FullPage>
     </div>

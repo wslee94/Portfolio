@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import style from './style.module.scss';
 import { scrollMove } from '../../util';
 
-export default function FullPage({ scrollOffset, children }) {
+export default function FullPage({ scrollOffset, id, children }) {
   const sectionRef = useRef();
   const { scrollTop, scrollBottom, direction } = scrollOffset;
 
@@ -18,7 +18,7 @@ export default function FullPage({ scrollOffset, children }) {
   }
 
   return (
-    <div className={style.page} ref={sectionRef}>
+    <div id={id} className={style.page} ref={sectionRef}>
       {children}
     </div>
   );
@@ -26,4 +26,5 @@ export default function FullPage({ scrollOffset, children }) {
 
 FullPage.propTypes = {
   scrollOffset: PropTypes.object,
+  id: PropTypes.string,
 };
