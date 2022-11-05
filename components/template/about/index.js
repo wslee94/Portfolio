@@ -5,7 +5,6 @@ import Github from '/public/assets/icon/about-github.svg';
 import Mail from '/public/assets/icon/about-mail.svg';
 import Phone from '/public/assets/icon/about-phone.svg';
 import Address from '/public/assets/icon/about-address.svg';
-import TechIcon from '/components/tech-icon';
 
 export default function About({ isAcitve }) {
   const getWorkYear = () => {
@@ -59,9 +58,7 @@ export default function About({ isAcitve }) {
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
       </div>
-      <div>
-        <TechIcon />
-      </div>
+      <div></div>
     </section>
   );
 }
