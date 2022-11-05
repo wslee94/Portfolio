@@ -5,6 +5,8 @@ import Github from '/public/assets/icon/about-github.svg';
 import Mail from '/public/assets/icon/about-mail.svg';
 import Phone from '/public/assets/icon/about-phone.svg';
 import Address from '/public/assets/icon/about-address.svg';
+import { techList } from './data.js';
+import TechIcon from '../../tech-icon';
 
 export default function About({ isAcitve }) {
   const getWorkYear = () => {
@@ -58,7 +60,11 @@ export default function About({ isAcitve }) {
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
       </div>
-      <div></div>
+      <div className={style.wrapper_tech}>
+        {techList.map((n) => (
+          <TechIcon key={n.icon} icon={n.icon} tooltip={n.tooltip} />
+        ))}
+      </div>
     </section>
   );
 }
