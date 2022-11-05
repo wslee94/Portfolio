@@ -1,4 +1,103 @@
+@import "../../../styles/mixin.scss";
+
 .section_about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: #232423;
   padding: 60px;
+  gap: 60px;
+}
+
+.wrapper_title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.text_year {
+  font-weight: 700;
+  font-size: 60px;
+  color: #C2AF99;
+}
+
+.text_title {
+  font-weight: 700;
+  font-size: 35px;
+  line-height: 45px;
+  color: white;
+}
+
+.wrapper_description {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.img_profile {
+  width: 167px;
+  height: 215px;
+}
+
+.text_description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 29px;
+  color: #D8D8D8;
+}
+
+.wrapper_button {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.button_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background: black;
+  opacity: 0.5;
+
+  &.active {
+    opacity: 1;
+  }
+
+  @include hover {
+    &:hover {
+      opacity: 1;
+      & ~ .LNBTooltip {
+        display: block;
+      }
+    }
+  }
+  
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+}
+
+.wrapper_info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.line_info {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.text_info {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 30px;
+  color: #D8D8D8;
 }

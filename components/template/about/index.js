@@ -1,31 +1,63 @@
 import style from './style.module.scss';
+import Profile from '../../../assets/img/profile/profile.svg';
+import Velog from '../../../assets/icon/about-velog.svg';
+import Github from '../../../assets/icon/about-github.svg';
+import Mail from '../../../assets/icon/about-mail.svg';
+import Phone from '../../../assets/icon/about-phone.svg';
+import Address from '../../../assets/icon/about-address.svg';
 
 export default function About({ isAcitve }) {
+  const getWorkYear = () => {
+    const currentYear = new Date().getFullYear();
+    const workStartYear = 2019;
+
+    return currentYear - workStartYear + 1;
+  };
+
   return (
-    <div className={`section ${style.section_about}`}>
-      about
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-      <br />
-    </div>
+    <section className={`section ${style.section_about}`}>
+      <div className={style.wrapper_title}>
+        <span className={style.text_year}>{getWorkYear()}⁺</span>
+        <div>
+          <p className={style.text_title}>
+            안녕하세요! <br /> 프론트엔드 개발자 이원섭 입니다.
+          </p>
+        </div>
+      </div>
+      <div className={style.wrapper_description}>
+        <div>
+          <Profile className={style.img_profile} />
+        </div>
+        <div>
+          <p className={style.text_description}>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
+            tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit
+            sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+          </p>
+          <div className={style.wrapper_button}>
+            <button className={style.button_icon} onClick={() => {}}>
+              <Velog className={style.icon} />
+            </button>
+            <button className={style.button_icon} onClick={() => {}}>
+              <Github className={style.icon} />
+            </button>
+          </div>
+        </div>
+      </div>
+      <div className={style.wrapper_info}>
+        <div className={style.line_info}>
+          <Mail className={style.icon} />
+          <span className={style.text_info}>leemuo123@gmail.com</span>
+        </div>
+        <div className={style.line_info}>
+          <Phone className={style.icon} />
+          <span className={style.text_info}>010-2264-3735</span>
+        </div>
+        <div className={style.line_info}>
+          <Address className={style.icon} />
+          <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
+        </div>
+      </div>
+    </section>
   );
 }
