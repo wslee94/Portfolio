@@ -1,10 +1,10 @@
 import style from './style.module.scss';
-import AbountIcon from '../../assets/icon/lnb-about.svg';
-import CareerIcon from '../../assets/icon/lnb-career.svg';
-import ExperienceIcon from '../../assets/icon/lnb-experience.svg';
-import GalleryIcon from '../../assets/icon/lnb-gallery.svg';
-import ProjectIcon from '../../assets/icon/lnb-project.svg';
-import { CurrentPageContext } from '../../context/CurrentPageContext';
+import AbountIcon from '/public/assets/icon/lnb-about.svg';
+import CareerIcon from '/public/assets/icon/lnb-career.svg';
+import ExperienceIcon from '/public/assets/icon/lnb-experience.svg';
+import GalleryIcon from '/public/assets/icon/lnb-gallery.svg';
+import ProjectIcon from '/public/assets/icon/lnb-project.svg';
+import { CurrentPageContext } from '/context/CurrentPageContext';
 import { useContext } from 'react';
 
 const LNB = (props) => {

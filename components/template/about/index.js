@@ -1,10 +1,11 @@
 import style from './style.module.scss';
-import Profile from '../../../assets/img/profile/profile.svg';
-import Velog from '../../../assets/icon/about-velog.svg';
-import Github from '../../../assets/icon/about-github.svg';
-import Mail from '../../../assets/icon/about-mail.svg';
-import Phone from '../../../assets/icon/about-phone.svg';
-import Address from '../../../assets/icon/about-address.svg';
+import Profile from '/public/assets/img/profile/profile.svg';
+import Velog from '/public/assets/icon/about-velog.svg';
+import Github from '/public/assets/icon/about-github.svg';
+import Mail from '/public/assets/icon/about-mail.svg';
+import Phone from '/public/assets/icon/about-phone.svg';
+import Address from '/public/assets/icon/about-address.svg';
+import TechIcon from '/components/tech-icon';
 
 export default function About({ isAcitve }) {
   const getWorkYear = () => {
@@ -57,6 +58,9 @@ export default function About({ isAcitve }) {
           <Address className={style.icon} />
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
+      </div>
+      <div>
+        <TechIcon />
       </div>
     </section>
   );
