@@ -12,6 +12,26 @@ export default function Home() {
   const [scrollOffset] = useScroll();
 
   return (
+    <div className="container mobile">
+      <FullPage id="about" scrollOffset={scrollOffset} isMobile={true}>
+        <About />
+      </FullPage>
+      <FullPage id="career" scrollOffset={scrollOffset} isMobile={true}>
+        <Career />
+      </FullPage>
+      <FullPage id="project" scrollOffset={scrollOffset} isMobile={true}>
+        <Project />
+      </FullPage>
+      <FullPage id="gallery" scrollOffset={scrollOffset} isMobile={true}>
+        <Gallery />
+      </FullPage>
+      <FullPage id="experience" scrollOffset={scrollOffset} isMobile={true}>
+        <Experience />
+      </FullPage>
+    </div>
+  );
+
+  return (
     <>
       <BrowserView>
         <div className="container">

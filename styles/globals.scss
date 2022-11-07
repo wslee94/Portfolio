@@ -7,10 +7,19 @@ body {
 
   .container {
     position: relative;
+    height: 100vh;
+    overflow-y: scroll;
 
-    .mobile {
-      height: 100vh;
-      overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 4px;
+      background: black;
+    }
+    &::-webkit-scrollbar-thumb {
+      border-radius: 2px;
+      background: #ccc;
+    }
+    
+    &.mobile {
       scroll-snap-type: y mandatory;
       .page {
         height: 100vh;
@@ -40,13 +49,7 @@ body {
     }
   }
 
-  &::-webkit-scrollbar {
-    width: 4px;
-  }
-  &::-webkit-scrollbar-thumb {
-    border-radius: 2px;
-    background: #ccc;
-  }
+ 
 }
 
 // @media (prefers-color-scheme: dark) {

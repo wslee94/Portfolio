@@ -6,22 +6,23 @@ export default function useScroll() {
   const [scrollBottom, setScrollBottom] = useState(0);
   const [direction, setDirection] = useState(0);
 
-  const listener = () => {
+  const listener = (e) => {
     setScrollTop((prev) => {
-      if (prev === window.pageYOffset) return window.pageYOffset;
-      if (prev > window.pageYOffset) setDirection(-1);
+      if (prev === e.target.scrollTop) return e.target.scrollTop;
+      if (prev > e.target.scrollTop) setDirection(-1);
       else setDirection(1);
-      return window.pageYOffset;
+      return e.target.scrollTop;
     });
-    setScrollBottom(window.pageYOffset + window.innerHeight);
+    setScrollBottom(e.target.scrollTop + window.innerHeight);
   };
 
   useEffect(() => {
-    window.addEventListener('scroll', debounce(listener, 20));
-    window.addEventListener('resize', debounce(listener, 20));
+    const el = document.querySelector('.container');
+    el.addEventListener('scroll', debounce(listener, 20));
+    el.addEventListener('resize', debounce(listener, 20));
     return () => {
-      window.removeEventListener('scroll', listener);
-      window.removeEventListener('resize', listener);
+      el.removeEventListener('scroll', listener);
+      el.removeEventListener('resize', listener);
     };
   }, []);
 
