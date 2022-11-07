@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import style from './style.module.scss';
 import Profile from '/public/assets/img/profile/profile.svg';
 import Velog from '/public/assets/icon/about-velog.svg';
@@ -37,26 +38,26 @@ export default function About({ isAcitve }) {
             sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
           </p>
           <div className={style.wrapper_button}>
-            <button className={style.button_icon} onClick={() => {}}>
-              <Velog className={style.icon} />
-            </button>
-            <button className={style.button_icon} onClick={() => {}}>
-              <Github className={style.icon} />
-            </button>
+            <a className={style.button_icon} href="https://velog.io/@wslee94" target="_blank">
+              <Velog className={style.icon_link} />
+            </a>
+            <a className={style.button_icon} href="https://github.com/wslee94" target="_blank">
+              <Github className={style.icon_link} />
+            </a>
           </div>
         </div>
       </div>
       <div className={style.wrapper_info}>
         <div className={style.line_info}>
-          <Mail className={style.icon} />
+          <Mail className={style.icon_info} />
           <span className={style.text_info}>leemuo123@gmail.com</span>
         </div>
         <div className={style.line_info}>
-          <Phone className={style.icon} />
+          <Phone className={style.icon_info} />
           <span className={style.text_info}>010-2264-3735</span>
         </div>
         <div className={style.line_info}>
-          <Address className={style.icon} />
+          <Address className={style.icon_info} />
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
       </div>
