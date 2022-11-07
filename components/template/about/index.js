@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { useContext, useEffect, useState } from 'react';
 import style from './style.module.scss';
 import Profile from '/public/assets/img/profile/profile.svg';
 import Velog from '/public/assets/icon/about-velog.svg';
@@ -8,8 +8,12 @@ import Phone from '/public/assets/icon/about-phone.svg';
 import Address from '/public/assets/icon/about-address.svg';
 import { techList } from './data.js';
 import TechIcon from '../../tech-icon';
+import { CurrentPageContext } from '../../../context/CurrentPageContext';
 
-export default function About({ isAcitve }) {
+export default function About() {
+  const [isAcitve, setIsActive] = useState(false);
+  const { currentPage } = useContext(CurrentPageContext);
+
   const getWorkYear = () => {
     const currentYear = new Date().getFullYear();
     const workStartYear = 2019;
@@ -17,9 +21,17 @@ export default function About({ isAcitve }) {
     return currentYear - workStartYear + 1;
   };
 
+  useEffect(() => {
+    if (currentPage === 'about') {
+      setIsActive(true);
+    } else {
+      setIsActive(false);
+    }
+  }, [currentPage]);
+
   return (
     <section className={`section ${style.section_about}`}>
-      <div className={style.wrapper_title}>
+      <div className={[style.wrapper_title, isAcitve ? style.active : ''].join(' ')}>
         <span className={style.text_year}>{getWorkYear()}⁺</span>
         <div>
           <p className={style.text_title}>
@@ -27,7 +39,7 @@ export default function About({ isAcitve }) {
           </p>
         </div>
       </div>
-      <div className={style.wrapper_description}>
+      <div className={[style.wrapper_description, isAcitve ? style.active : ''].join(' ')}>
         <div>
           <Profile className={style.img_profile} />
         </div>
@@ -47,7 +59,7 @@ export default function About({ isAcitve }) {
           </div>
         </div>
       </div>
-      <div className={style.wrapper_info}>
+      <div className={[style.wrapper_info, isAcitve ? style.active : ''].join(' ')}>
         <div className={style.line_info}>
           <Mail className={style.icon_info} />
           <span className={style.text_info}>leemuo123@gmail.com</span>
@@ -61,7 +73,7 @@ export default function About({ isAcitve }) {
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
       </div>
-      <div className={style.wrapper_tech}>
+      <div className={[style.wrapper_tech, isAcitve ? style.active : ''].join(' ')}>
         {techList.map((n) => (
           <TechIcon key={n.icon} icon={n.icon} tooltip={n.tooltip} />
         ))}
