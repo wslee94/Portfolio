@@ -11,10 +11,13 @@ export default function FullPage({ scrollOffset, id, children }) {
 
   const sectionOffsetTop = sectionRef?.current?.offsetTop || 0;
   const sectionOffsetBottom = sectionOffsetTop + sectionRef?.current?.offsetHeight || 0;
-  const isAcitve = scrollTop >= sectionOffsetTop && scrollTop < sectionOffsetBottom;
+  const isAcitve = scrollTop >= sectionOffsetTop && scrollTop < sectionOffsetBottom - 10;
 
   useEffect(() => {
-    if (isAcitve) changeCurrentPage(id);
+    if (isAcitve) {
+      console.log(id);
+      changeCurrentPage(id);
+    }
   }, [isAcitve]);
 
   if (isAcitve && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
