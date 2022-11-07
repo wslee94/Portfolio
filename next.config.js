@@ -7,8 +7,7 @@ const nextConfig = {
   swcMinify: true,
   assetPrefix: IS_PROD ? BASE_PATH : '',
   images: {
-    loader: 'imgix',
-    path: IS_PROD ? BASE_PATH : '',
+    domains: [IS_PROD ? 'https://wslee94.github.io/portfolio/' : 'http://localhost:3000/'],
   },
   env: {
     basePath: IS_PROD ? BASE_PATH : '',
