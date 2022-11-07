@@ -38,10 +38,10 @@ export default function About({ isAcitve }) {
             sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
           </p>
           <div className={style.wrapper_button}>
-            <a className={style.button_icon} href="https://velog.io/@wslee94" target="_blank">
+            <a className={style.button_icon} href="https://velog.io/@wslee94" target="_blank" rel="noreferrer">
               <Velog className={style.icon_link} />
             </a>
-            <a className={style.button_icon} href="https://github.com/wslee94" target="_blank">
+            <a className={style.button_icon} href="https://github.com/wslee94" target="_blank" rel="noreferrer">
               <Github className={style.icon_link} />
             </a>
           </div>
