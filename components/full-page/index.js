@@ -1,9 +1,8 @@
 import React, { useEffect, useRef, useContext } from 'react';
 import PropTypes from 'prop-types';
-import style from './style.module.scss';
 import { scrollMove } from '../../util';
 import { CurrentPageContext } from '../../context/CurrentPageContext';
-export default function FullPage({ scrollOffset, id, children }) {
+export default function FullPage({ scrollOffset, id, children, isMobile }) {
   const sectionRef = useRef();
   const { changeCurrentPage } = useContext(CurrentPageContext);
 
@@ -15,19 +14,20 @@ export default function FullPage({ scrollOffset, id, children }) {
 
   useEffect(() => {
     if (isAcitve) {
-      console.log(id);
       changeCurrentPage(id);
     }
   }, [isAcitve]);
 
-  if (isAcitve && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
-    scrollMove(sectionOffsetBottom, direction);
-  } else if (isAcitve && direction < 0 && scrollTop + 5 < sectionOffsetBottom) {
-    scrollMove(sectionOffsetTop, direction);
+  if (!isMobile) {
+    if (isAcitve && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
+      scrollMove(sectionOffsetBottom, direction);
+    } else if (isAcitve && direction < 0 && scrollTop + 5 < sectionOffsetBottom) {
+      scrollMove(sectionOffsetTop, direction);
+    }
   }
 
   return (
-    <div id={id} className={style.page} ref={sectionRef}>
+    <div id={id} className="page" ref={sectionRef}>
       {children}
     </div>
   );

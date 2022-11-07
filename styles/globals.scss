@@ -8,26 +8,44 @@ body {
   .container {
     position: relative;
 
+    .mobile {
+      height: 100vh;
+      overflow-y: scroll;
+      scroll-snap-type: y mandatory;
+      .page {
+        height: 100vh;
+        overflow-y: auto;
+        scroll-snap-align: start;
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+          display: none; /* Chrome, Safari, Opera*/
+        }
+      }
+    }
+
+    .page {
+      height: 100vh;
+      overflow-y: auto;
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+      &::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera*/
+      }
+    }
+
     .section {
       width: 100%;
       min-height: 100%;
-    
-      &::-webkit-scrollbar {
-        width: 4px;
-      }
-      &::-webkit-scrollbar-thumb {
-        border-radius: 2px;
-        background: #ccc;
-      }
     }
-  
   }
 
-
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
   &::-webkit-scrollbar {
-    display: none; /* Chrome, Safari, Opera*/
+    width: 4px;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 2px;
+    background: #ccc;
   }
 }
 
