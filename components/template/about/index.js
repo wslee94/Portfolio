@@ -11,7 +11,7 @@ import TechIcon from '../../tech-icon';
 import { CurrentPageContext } from '../../../context/CurrentPageContext';
 
 export default function About() {
-  const [isAcitve, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const { currentPage } = useContext(CurrentPageContext);
 
   const getWorkYear = () => {
@@ -31,7 +31,7 @@ export default function About() {
 
   return (
     <section className={`section ${style.section_about}`}>
-      <div className={[style.wrapper_title, isAcitve ? style.active : ''].join(' ')}>
+      <div className={[style.wrapper_title, isActive ? style.active : ''].join(' ')}>
         <span className={style.text_year}>{getWorkYear()}⁺</span>
         <div>
           <p className={style.text_title}>
@@ -39,7 +39,7 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div className={[style.wrapper_description, isAcitve ? style.active : ''].join(' ')}>
+      <div className={[style.wrapper_description, isActive ? style.active : ''].join(' ')}>
         <div>
           <Profile className={style.img_profile} />
         </div>
@@ -59,7 +59,7 @@ export default function About() {
           </div>
         </div>
       </div>
-      <div className={[style.wrapper_info, isAcitve ? style.active : ''].join(' ')}>
+      <div className={[style.wrapper_info, isActive ? style.active : ''].join(' ')}>
         <div className={style.line_info}>
           <Mail className={style.icon_info} />
           <span className={style.text_info}>leemuo123@gmail.com</span>
@@ -73,7 +73,7 @@ export default function About() {
           <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
         </div>
       </div>
-      <div className={[style.wrapper_tech, isAcitve ? style.active : ''].join(' ')}>
+      <div className={[style.wrapper_tech, isActive ? style.active : ''].join(' ')}>
         <ul>
           {techList.map((n) => (
             <li key={n.icon}>

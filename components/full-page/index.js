@@ -11,7 +11,7 @@ export default function FullPage({ scrollOffset, id, children, isMobile, scrollB
 
   const sectionOffsetTop = sectionRef?.current?.offsetTop || 0;
   const sectionOffsetBottom = sectionOffsetTop + sectionRef?.current?.offsetHeight || 0;
-  const isAcitve = scrollTop >= sectionOffsetTop && scrollTop < sectionOffsetBottom - 10;
+  const isActive = scrollTop >= sectionOffsetTop - 10 && scrollTop < sectionOffsetBottom - 10;
 
   useEffect(() => {
     const el = document.querySelector('.container');
@@ -19,15 +19,15 @@ export default function FullPage({ scrollOffset, id, children, isMobile, scrollB
   }, []);
 
   useEffect(() => {
-    if (isAcitve) {
+    if (isActive) {
       changeCurrentPage(id);
     }
-  }, [isAcitve]);
+  }, [isActive]);
 
   if (!isMobile) {
-    if (isAcitve && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
+    if (isActive && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
       scrollMove(sectionOffsetBottom, direction, scorllBody);
-    } else if (isAcitve && direction < 0 && scrollTop + 5 < sectionOffsetBottom) {
+    } else if (isActive && direction < 0 && scrollTop + 5 < sectionOffsetBottom) {
       scrollMove(sectionOffsetTop, direction, scorllBody);
     }
   }

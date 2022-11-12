@@ -5,7 +5,7 @@ import { CurrentPageContext } from '../../../context/CurrentPageContext';
 import { careerList } from './data.js';
 
 export default function Career() {
-  const [isAcitve, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
   const { currentPage } = useContext(CurrentPageContext);
 
   useEffect(() => {
@@ -25,7 +25,7 @@ export default function Career() {
           return (
             <li
               key={`${career.id}-${index}`}
-              className={[style.wrapper_item, style.arrow, isAcitve ? style.active : ''].join(' ')}
+              className={[style.wrapper_item, style.arrow, isActive ? style.active : ''].join(' ')}
             >
               <Image src="/assets/img/career/arrow.svg" layout="fill" />
             </li>
@@ -35,7 +35,7 @@ export default function Career() {
         return (
           <li
             key={career.id}
-            className={[style.wrapper_item, isLast ? style.white : '', isAcitve ? style.active : ''].join(' ')}
+            className={[style.wrapper_item, isLast ? style.white : '', isActive ? style.active : ''].join(' ')}
           >
             <div className={style.wrapper_logo}>
               <span className={style.text_duration}>{career.period}</span>
