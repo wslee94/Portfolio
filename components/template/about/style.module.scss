@@ -234,10 +234,12 @@
 }
 
 .wrapper_tech {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
   opacity: 0;
   transform: translateY(20px); 
   -webkit-transform: translateY(20px); 

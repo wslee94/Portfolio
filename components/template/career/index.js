@@ -38,7 +38,7 @@ export default function Career() {
             className={[style.wrapper_item, isLast ? style.white : '', isAcitve ? style.active : ''].join(' ')}
           >
             <div className={style.wrapper_logo}>
-              <span className={style.text_duration}>{career.duration}</span>
+              <span className={style.text_duration}>{career.period}</span>
               <div className={style.logo}>
                 <Image src={career.logo} layout="fill" />
               </div>

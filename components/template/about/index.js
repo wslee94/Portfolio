@@ -74,9 +74,13 @@ export default function About() {
         </div>
       </div>
       <div className={[style.wrapper_tech, isAcitve ? style.active : ''].join(' ')}>
-        {techList.map((n) => (
-          <TechIcon key={n.icon} icon={n.icon} tooltip={n.tooltip} />
-        ))}
+        <ul>
+          {techList.map((n) => (
+            <li key={n.icon}>
+              <TechIcon icon={n.icon} tooltip={n.tooltip} />
+            </li>
+          ))}
+        </ul>
       </div>
     </section>
   );
