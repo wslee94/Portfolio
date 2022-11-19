@@ -10,9 +10,6 @@ export default function Project() {
   return (
     <div className={`section ${style.section_project}`}>
       {projectList.map((project, index) => {
-        if (project.type === 'divide') {
-          return <div key={index}>aaaa</div>;
-        }
         return (
           <div key={index} className={style.container}>
             <div className={style.wrapper_summary}>

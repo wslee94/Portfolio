@@ -1,3 +1,179 @@
-.section_expreience {
+@import "../../../styles/mixin.scss";
+
+.section_experience {
+  display: flex;
+  flex-direction: column;
+  padding: 60px;
+  gap: 100px;
   background-color: #232423;
+  color: #FFF;
+
+  @include tablet {
+    padding: 50px;
+    gap: 80px;
+  }
+
+  @include mobile {
+    padding: 15px;
+    gap: 60px;
+  }
+}
+
+.wrapper_experience {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 1300px) {
+    flex-direction: column;
+  }
+}
+
+.experience_image {
+  position: relative;
+  flex-shrink: 0;
+  width: 800px;
+  height: 600px;
+
+  @media (max-width: 1600px) {
+    width: 750px;
+    height: 563px;
+  }
+
+  @media (max-width: 1500px) {
+    width: 700px;
+    height: 525px;
+  }
+
+  @media (max-width: 1400px) {
+    width: 650px;
+    height: 488px;
+  }
+  
+  @media (max-width: 1300px) {
+    display: none;
+  }
+}
+
+.wrapper_description {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  gap: 30px;
+
+  @include tablet {
+    gap: 20px;
+  }
+
+  @include mobile {
+    gap: 15px;
+  }
+}
+
+.title_description {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 44px;
+  margin-bottom: 30px;
+
+  @include tablet {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    font-size: 26px;
+    line-height: 30px;
+    margin-bottom: 10px;
+  }
+}
+
+.subtitle_description {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: right;
+  color: #D8D8D8;;
+
+  @include tablet {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
+.content_description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #D8D8D8;
+
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.list_link {
+  display: flex;
+  flex-direction: column;
+
+  li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+.link_description {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 26px;
+  color: #D8D8D8;
+
+  @include hover {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  @include tablet {
+    font-size: 18px;
+    line-height: 24px;
+  }
+
+  @include mobile {
+    font-size: 16px;
+    line-height: 22px;
+  }
+}
+
+.icon_link {
+  width: 25px;
+  height: 25px;
+
+  @include tablet {
+    width: 20px;
+    height: 20px;
+  }
+
+  @include mobile {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.list_tech {
+  display: flex;
+  gap: 10px;
 }
