@@ -1,3 +1,90 @@
+@import "../../../styles/mixin.scss";
+
+
 .section_gallery {
   background-color: #111;
+  padding: 60px;
+  
+  @include tablet {
+    padding: 50px;
+  }
+
+  @include mobile {
+    padding: 15px;
+  }
 }
+
+.container_image {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.wrapper_image {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+
+  @include tablet {
+    border-radius: 8px;
+  }
+
+  @include mobile {
+    border-radius: 4px;
+  }
+
+  &.full {
+    grid-column: span 4;
+  }
+
+  &.tree_quaters {
+    grid-column: span 3;
+    @include tablet {
+      grid-column: span 4;
+    }
+  
+    @include mobile {
+      grid-column: span 4;
+    }
+  }
+
+  &.half {
+    grid-column: span 2;
+    
+    @include tablet {
+      grid-column: span 4;
+    }
+  
+    @include mobile {
+      grid-column: span 4;
+    }
+  }
+
+  &.quater {
+    grid-column: span 1;
+
+    @include tablet {
+      display: none;
+    }
+  
+    @include mobile {
+      display: none;
+    }
+  }
+
+  & > span {
+    position: unset !important;
+    height: 100% !important;
+
+    & .image {
+      object-fit: fill !important;
+      position: relative !important;
+      height: auto !important;
+    }
+  }
+}
+
