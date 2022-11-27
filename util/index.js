@@ -5,6 +5,8 @@ function scrollMove(moveY, direction, scrollBody) {
   let vy = 0;
   let pageYOffset = 0;
 
+  scrollBody.classList.add('noscroll');
+
   var loop = setInterval(function () {
     vy += SPEED * direction;
 
@@ -18,8 +20,14 @@ function scrollMove(moveY, direction, scrollBody) {
 
     if (pageYOffset >= moveY && direction > 0) {
       clearInterval(loop);
+      setTimeout(() => {
+        scrollBody.classList.remove('noscroll');
+      }, [750]);
     } else if (pageYOffset <= moveY && direction < 0) {
       clearInterval(loop);
+      setTimeout(() => {
+        scrollBody.classList.remove('noscroll');
+      }, [750]);
     }
   }, 10);
 }

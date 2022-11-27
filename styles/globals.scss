@@ -4,21 +4,23 @@ body {
   margin: 0;
   font-family: 'Noto Sans KR', sans-serif;
   min-width: 360px;
+  height: 100vh;
+
+  .container.noscroll {
+    overflow-y: hidden;
+  }
 
   .container {
     position: relative;
     height: 100vh;
     overflow-y: scroll;
 
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
     &::-webkit-scrollbar {
-      width: 4px;
-      background: black;
+      display: none; /* Chrome, Safari, Opera*/
     }
-    &::-webkit-scrollbar-thumb {
-      border-radius: 2px;
-      background: #ccc;
-    }
-    
+
     &.mobile {
       scroll-snap-type: y mandatory;
       .page {
@@ -48,8 +50,6 @@ body {
       min-height: 100%;
     }
   }
-
- 
 }
 
 // @media (prefers-color-scheme: dark) {
