@@ -3,10 +3,10 @@ import PropTypes from 'prop-types';
 import { scrollMove } from '../../util';
 import { CurrentPageContext } from '../../context/CurrentPageContext';
 
-export default function FullPage({ scrollOffset, id, children, isMobile, scrollBodyRef }) {
+export default function FullPage({ scrollOffset, id, children, isMobile, isNoScrollMove }) {
   const sectionRef = useRef();
   const { changeCurrentPage } = useContext(CurrentPageContext);
-  const [scorllBody, setScrollBody] = useState(null);
+  const [scrollBody, setScrollBody] = useState(null);
   const { scrollTop, scrollBottom, direction } = scrollOffset;
 
   const sectionOffsetTop = sectionRef?.current?.offsetTop || 0;
@@ -24,16 +24,16 @@ export default function FullPage({ scrollOffset, id, children, isMobile, scrollB
     }
   }, [isActive]);
 
-  if (!isMobile) {
+  if (!isMobile && !isNoScrollMove) {
     if (isActive && direction > 0 && scrollBottom - 5 > sectionOffsetBottom) {
-      scrollMove(sectionOffsetBottom, direction, scorllBody);
+      scrollMove(sectionOffsetBottom, direction, scrollBody);
     } else if (isActive && direction < 0 && scrollTop + 5 < sectionOffsetBottom) {
-      scrollMove(sectionOffsetTop, direction, scorllBody);
+      scrollMove(sectionOffsetTop, direction, scrollBody);
     }
   }
 
   return (
-    <div id={id} className="page" ref={sectionRef}>
+    <div id={id} className={['page', !isNoScrollMove ? 'full' : ''].join(' ')} ref={sectionRef}>
       {children}
     </div>
   );

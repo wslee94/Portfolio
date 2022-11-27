@@ -26,13 +26,13 @@ export default function Home() {
       <FullPage id="career" scrollOffset={scrollOffset}>
         <Career />
       </FullPage>
-      <FullPage id="project" scrollOffset={scrollOffset}>
+      <FullPage id="project" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Project />
       </FullPage>
-      <FullPage id="gallery" scrollOffset={scrollOffset}>
+      <FullPage id="gallery" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Gallery />
       </FullPage>
-      <FullPage id="experience" scrollOffset={scrollOffset}>
+      <FullPage id="experience" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Experience />
       </FullPage>
     </div>

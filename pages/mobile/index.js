@@ -27,13 +27,13 @@ const Mobile = () => {
       <FullPage id="career" scrollOffset={scrollOffset} isMobile={true}>
         <Career />
       </FullPage>
-      <FullPage id="project" scrollOffset={scrollOffset} isMobile={true}>
+      <FullPage id="project" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
         <Project />
       </FullPage>
-      <FullPage id="gallery" scrollOffset={scrollOffset} isMobile={true}>
+      <FullPage id="gallery" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
         <Gallery />
       </FullPage>
-      <FullPage id="experience" scrollOffset={scrollOffset} isMobile={true}>
+      <FullPage id="experience" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
         <Experience />
       </FullPage>
     </div>
