@@ -22,12 +22,8 @@ body {
     &.mobile {
       scroll-snap-type: y mandatory;
       .page {
-        scroll-snap-align: start;
         min-height: 100vh;
-        overflow-y: auto;
-        &.full {
-          height: 100vh;
-        }
+        scroll-snap-align: start;
       }
     }
 

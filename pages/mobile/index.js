@@ -21,19 +21,19 @@ const Mobile = () => {
 
   return (
     <div className="container mobile">
-      <FullPage id="about" scrollOffset={scrollOffset} isMobile={true}>
+      <FullPage id="about" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <About />
       </FullPage>
-      <FullPage id="career" scrollOffset={scrollOffset} isMobile={true}>
+      <FullPage id="career" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Career />
       </FullPage>
-      <FullPage id="project" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
+      <FullPage id="project" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Project />
       </FullPage>
-      <FullPage id="gallery" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
+      <FullPage id="gallery" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Gallery />
       </FullPage>
-      <FullPage id="experience" scrollOffset={scrollOffset} isMobile={true} isNoScrollMove={true}>
+      <FullPage id="experience" scrollOffset={scrollOffset} isNoScrollMove={true}>
         <Experience />
       </FullPage>
     </div>
