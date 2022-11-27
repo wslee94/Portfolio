@@ -7,10 +7,10 @@ const nextConfig = {
   // basePath: IS_PROD ? '/portfolio' : '',
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: IS_PROD ? BASE_PATH : '',
+  assetPrefix: IS_PROD ? '/portfolio/' : '',
   images: {
     loader: 'imgix',
-    path: IS_PROD ? '/portfolio' : LOCAL_PATH,
+    path: IS_PROD ? BASE_PATH : LOCAL_PATH,
     domains: [BASE_PATH, LOCAL_PATH],
   },
   env: {
