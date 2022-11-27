@@ -1,20 +1,20 @@
 /** @type {import('next').NextConfig} */
 const IS_PROD = process.env.NODE_ENV === 'production';
 const BASE_PATH = 'https://wslee94.github.io/portfolio';
-const LOCAL_PATH = 'http://localhost:3000';
+const LOCAL_PATH = 'http://localhost:3000/portfolio';
 
 const nextConfig = {
-  // basePath: IS_PROD ? '/portfolio' : '',
+  basePath: '/portfolio',
   reactStrictMode: true,
   swcMinify: true,
-  assetPrefix: IS_PROD ? '/portfolio/' : '',
+  assetPrefix: '/portfolio/',
   images: {
     loader: 'imgix',
     path: IS_PROD ? BASE_PATH : LOCAL_PATH,
     domains: [BASE_PATH, LOCAL_PATH],
   },
   env: {
-    basePath: IS_PROD ? BASE_PATH : '',
+    basePath: IS_PROD ? BASE_PATH : LOCAL_PATH,
   },
   webpack(config) {
     config.module.rules.push({
