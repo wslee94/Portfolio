@@ -1,6 +1,6 @@
 import { useContext, useEffect, useState } from 'react';
+import Image from 'next/image';
 import style from './style.module.scss';
-import Profile from '/public/assets/img/profile/profile.svg';
 import Velog from '/public/assets/icon/about-velog.svg';
 import Github from '/public/assets/icon/about-github.svg';
 import Mail from '/public/assets/icon/about-mail.svg';
@@ -40,8 +40,8 @@ export default function About() {
         </div>
       </div>
       <div className={[style.wrapper_description, isActive ? style.active : ''].join(' ')}>
-        <div>
-          <Profile className={style.img_profile} />
+        <div className={style.img_profile}>
+          <Image src="/portfolio/assets/img/profile/profile.png" layout="fill" />
         </div>
         <div>
           <p className={style.text_description}>
