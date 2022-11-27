@@ -4,13 +4,14 @@ const BASE_PATH = 'https://wslee94.github.io/portfolio';
 const LOCAL_PATH = 'http://localhost:3000';
 
 const nextConfig = {
+  basePath: IS_PROD ? '/portfolio' : '',
   reactStrictMode: true,
   swcMinify: true,
   assetPrefix: IS_PROD ? BASE_PATH : '',
   images: {
     loader: 'imgix',
     path: IS_PROD ? BASE_PATH : LOCAL_PATH,
-    domains: ['https://wslee94.github.io/portfolio', LOCAL_PATH],
+    domains: [BASE_PATH, LOCAL_PATH],
   },
   env: {
     basePath: IS_PROD ? BASE_PATH : '',
