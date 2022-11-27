@@ -3,7 +3,7 @@ export const projectList = [
     title: 'MapleStory Worlds',
     company: 'Nexon',
     period: '2022.05 ~',
-    image: '/assets/img/project/maplestoryworlds.svg',
+    image: '/portfolio/assets/img/project/maplestoryworlds.svg',
     description: '메이플스토리 월드는 누구나 자유롭게 게임 콘텐츠를 제작하고 플레이하는 플랫폼입니다.',
     part: ['페이지 개발 및 UI/UX 개선'],
     link: [
@@ -26,7 +26,7 @@ export const projectList = [
     title: 'LawShot',
     company: 'HumaxIT',
     period: '2019.05 ~ 2022.04',
-    image: '/assets/img/project/lawshot.svg',
+    image: '/portfolio/assets/img/project/lawshot.svg',
     description: '법무법인의 업무를 시스템화하여 업무의 효율성을 높이기 위한 서비스입니다.',
     part: [
       '페이지 개발 및 UI/UX 개선',

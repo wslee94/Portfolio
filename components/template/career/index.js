@@ -27,7 +27,7 @@ export default function Career() {
               key={`${career.id}-${index}`}
               className={[style.wrapper_item, style.arrow, isActive ? style.active : ''].join(' ')}
             >
-              <Image src="/assets/img/career/arrow.svg" layout="fill" />
+              <Image src="/portfolio/assets/img/career/arrow.svg" layout="fill" />
             </li>
           );
         }

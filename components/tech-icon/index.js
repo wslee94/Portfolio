@@ -5,7 +5,7 @@ const TechIcon = ({ icon, tooltip }) => {
   return (
     <div className={style.container}>
       <div className={style.logo}>
-        <Image src={`/assets/icon/tech-${icon}.svg`} layout="fill" />
+        <Image src={`/portfolio/assets/icon/tech-${icon}.svg`} layout="fill" />
       </div>
       <span className={style.tooltip}>{tooltip}</span>
     </div>

@@ -1,6 +1,6 @@
 export const experienceList = [
   {
-    image: '/assets/img/experience/pop3.png',
+    image: '/portfolio/assets/img/experience/pop3.png',
     title: 'POP3 클라이언트 오픈소스 기여',
     period: '2021-10',
     host: '개인',
@@ -18,7 +18,7 @@ export const experienceList = [
     ],
   },
   {
-    image: '/assets/img/experience/kosta.png',
+    image: '/portfolio/assets/img/experience/kosta.png',
     title: '지능정보사회를 위한 응용 Web Framework 개발자 양성과정',
     period: '2018-02-26 ~ 2018-06-27',
     host: '한국소프트웨어기술진흥협회(KOSTA) ',
