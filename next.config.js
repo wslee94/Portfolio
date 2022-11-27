@@ -4,9 +4,9 @@ const BASE_PATH = 'https://wslee94.github.io/portfolio';
 const LOCAL_PATH = 'http://localhost:3000/portfolio';
 
 const nextConfig = {
-  basePath: '/portfolio',
   reactStrictMode: true,
   swcMinify: true,
+  basePath: '/portfolio',
   assetPrefix: '/portfolio/',
   images: {
     loader: 'imgix',
