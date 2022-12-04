@@ -27,7 +27,7 @@ export default function Career() {
               key={`${career.id}-${index}`}
               className={[style.wrapper_item, style.arrow, isActive ? style.active : ''].join(' ')}
             >
-              <Image src="/portfolio/assets/img/career/arrow.svg" layout="fill" />
+              <Image alt="arrow" src="/portfolio/assets/img/career/arrow.svg" layout="fill" />
             </li>
           );
         }
@@ -40,7 +40,7 @@ export default function Career() {
             <div className={style.wrapper_logo}>
               <span className={style.text_duration}>{career.period}</span>
               <div className={style.logo}>
-                <Image src={career.logo} layout="fill" />
+                <Image alt="career logo" src={career.logo} layout="fill" />
               </div>
             </div>
             <div>

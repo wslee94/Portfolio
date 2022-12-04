@@ -41,7 +41,7 @@ export default function About() {
       </div>
       <div className={[style.wrapper_description, isActive ? style.active : ''].join(' ')}>
         <div className={style.img_profile}>
-          <Image src="/portfolio/assets/img/profile/profile.png" layout="fill" />
+          <Image alt="profile" src="/portfolio/assets/img/profile/profile.png" layout="fill" />
         </div>
         <div>
           <p className={style.text_description}>

@@ -17,7 +17,7 @@ export default function Project() {
               <span className={style.summary_company}>{project.company}</span>
               <span className={style.summary_period}>{project.period}</span>
               <div className={style.summary_image}>
-                <Image src={project.image} layout="fill" />
+                <Image alt="project image" src={project.image} layout="fill" />
               </div>
               <p className={style.summary_description}>{project.description}</p>
             </div>
