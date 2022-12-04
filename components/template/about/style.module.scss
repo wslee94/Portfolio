@@ -6,16 +6,16 @@
   justify-content: center;
   background-color: #232423;
   padding: 60px;
-  gap: 60px;
+  gap: 50px;
 
   @include tablet {
     padding: 50px;
-    gap: 40px;
+    gap: 30px;
   }
 
   @include mobile {
     padding: 15px;
-    gap: 30px;
+    gap: 20px;
   }
 }
 
@@ -97,6 +97,11 @@
   flex-shrink: 0;
   width: 167px;
   height: 215px;
+
+  @include mobile {
+    width: 117px;
+    height: 150px;
+  }
 }
 
 .text_description {
