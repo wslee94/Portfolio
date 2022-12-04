@@ -45,9 +45,10 @@ export default function About() {
         </div>
         <div>
           <p className={style.text_description}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam eu turpis molestie, dictum est a, mattis
-            tellus. Sed dignissim, metus nec fringilla accumsan, risus sem sollicitudin lacus, ut interdum tellus elit
-            sed risus. Maecenas eget condimentum velit, sit amet feugiat lectus.
+            <span className={style.text_italic}>"Vires acquirit eundo"</span>,{' '}
+            <span className={style.text_italic}>"정진"</span>
+            <br />
+            더디더라도 멈추지 않는, 단단해지기 위해 끊임없이 담금질하는 개발자입니다.
           </p>
           <div className={style.wrapper_button}>
             <a className={style.button_icon} href="https://velog.io/@wslee94" target="_blank" rel="noreferrer">
@@ -70,7 +71,7 @@ export default function About() {
         </div>
         <div className={style.line_info}>
           <Address className={style.icon_info} />
-          <span className={style.text_info}>Bundang-gu, Seongnam-si, Gyeonggi-do, Korea</span>
+          <span className={style.text_info}>Bundang-gu, Seongnam-si</span>
         </div>
       </div>
       <div className={[style.wrapper_tech, isActive ? style.active : ''].join(' ')}>

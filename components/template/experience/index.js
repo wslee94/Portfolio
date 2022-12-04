@@ -9,9 +9,6 @@ export default function Experience() {
     <div className={`section ${style.section_experience}`}>
       {experienceList.map((exp, index) => (
         <div key={index} className={style.wrapper_experience}>
-          <div className={style.experience_image}>
-            <Image src={exp.image} layout="fill" />
-          </div>
           <div className={style.wrapper_description}>
             <div>
               <p className={style.title_description}>{exp.title}</p>

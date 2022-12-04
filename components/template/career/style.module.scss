@@ -136,11 +136,13 @@
   @include tablet {
     font-size: 18px;
     line-height: 26px;
+    display: none;
   }
 
   @include mobile {
     font-size: 16px;
     line-height: 23px; 
+    display: none;
   }
 }
 

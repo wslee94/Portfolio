@@ -66,7 +66,6 @@
 
 .wrapper_description {
   display: flex;
-  align-items: center;
   gap: 15px;
 
   opacity: 0;
@@ -89,6 +88,7 @@
 
   @include mobile {
     flex-direction: column;
+    align-items: center;
   }
 }
 
@@ -110,6 +110,11 @@
     font-size: 16px;
     line-height: 23px;
   }
+}
+
+.text_italic {
+  font-weight: 700;
+  font-style: italic;
 }
 
 .wrapper_button {
@@ -215,6 +220,9 @@
 
   @include mobile {
     gap: 5px;
+    &:last-child {
+      display: none;
+    }
   }
 }
 
