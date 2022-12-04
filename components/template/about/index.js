@@ -45,8 +45,8 @@ export default function About() {
         </div>
         <div>
           <p className={style.text_description}>
-            <span className={style.text_italic}>"Vires acquirit eundo"</span>,{' '}
-            <span className={style.text_italic}>"정진"</span>
+            <span className={style.text_italic}>&ldquo;Vires acquirit eundo&rdquo;</span>,&nbsp;
+            <span className={style.text_italic}>&ldquo;정진&rdquo;</span>
             <br />
             더디더라도 멈추지 않는, 단단해지기 위해 끊임없이 담금질하는 개발자입니다.
           </p>
