@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from '../../Image';
 import Hand from '/public/assets/icon/project-hand.svg';
 import Link from '/public/assets/icon/project-link.svg';
 import Tech from '/public/assets/icon/project-tech.svg';

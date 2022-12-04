@@ -1,5 +1,5 @@
-import Image from 'next/image';
 import style from './style.module.scss';
+import Image from '../../Image';
 
 export default function Gallery() {
   return (

@@ -1,5 +1,5 @@
 import { useContext, useEffect, useState } from 'react';
-import Image from 'next/image';
+import Image from '../../Image';
 import style from './style.module.scss';
 import Velog from '/public/assets/icon/about-velog.svg';
 import Github from '/public/assets/icon/about-github.svg';

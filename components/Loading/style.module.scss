@@ -1,0 +1,23 @@
+.animation {
+  width: 42px;
+  height: 42px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+
+  margin-left: -21px;
+  margin-top: -21px;
+  border-radius: 50%;
+
+  border: 6px solid #ef5350;
+  border-top-color: transparent;
+  border-left-color: transparent;
+
+  animation: Rotate 1s infinite linear;
+  z-index: 100;
+}
+
+@keyframes Rotate {
+ from {transform: rotate(0deg)}
+ to {transform: rotate(360deg)}
+}
