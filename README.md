@@ -1,6 +1,9 @@
 # 포트폴리오
 돌아보며 성장하기 위한 포트폴리오 프로젝트
 
+## 링크
+- https://wslee94.github.io/portfolio/
+
 ## 개발환경
 - node 16.14.2
 - npm 8.5.0
