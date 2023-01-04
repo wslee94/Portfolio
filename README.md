@@ -10,3 +10,6 @@
 ## 스크립트
 - npm run dev (개발환경 실행)
 - npm run export (SSG)
+
+## 실행
+- http://localhost:3000/portfolio

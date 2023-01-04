@@ -1,7 +1,7 @@
 import { useContext, useEffect, useState } from 'react';
 import Image from '../../Image';
 import style from './style.module.scss';
-import Velog from '/public/assets/icon/about-velog.svg';
+import Velog from '/public/assets/icon/about-blogger.svg';
 import Github from '/public/assets/icon/about-github.svg';
 import Mail from '/public/assets/icon/about-mail.svg';
 import Phone from '/public/assets/icon/about-phone.svg';
@@ -51,7 +51,7 @@ export default function About() {
             더디더라도 멈추지 않는, 단단해지기 위해 끊임없이 담금질하는 개발자입니다.
           </p>
           <div className={style.wrapper_button}>
-            <a className={style.button_icon} href="https://velog.io/@wslee94" target="_blank" rel="noreferrer">
+            <a className={style.button_icon} href="https://wslee94.github.io" target="_blank" rel="noreferrer">
               <Velog className={style.icon_link} />
             </a>
             <a className={style.button_icon} href="https://github.com/wslee94" target="_blank" rel="noreferrer">
