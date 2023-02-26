@@ -6,6 +6,34 @@ export default function Gallery() {
     <div className={`section ${style.section_gallery}`}>
       <div className={style.container_image}>
         <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>FACEPLAY</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-profile.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>FACEPLAY</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-content.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>FACEPLAY</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-content-mobile.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds</p>
           <Image
             alt="project image"
             className={style.image}
@@ -14,6 +42,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds</p>
           <Image
             alt="project image"
             className={style.image}
@@ -22,6 +51,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds</p>
           <Image
             alt="project image"
             className={style.image}
@@ -30,6 +60,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -38,6 +69,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -46,6 +78,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -54,6 +87,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.half].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -62,6 +96,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.half].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -70,6 +105,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -78,6 +114,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
           <Image
             alt="project image"
             className={style.image}

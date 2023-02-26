@@ -5,6 +5,7 @@ export const techList = [
   { icon: 'typescript', tooltip: 'Typescript' },
   { icon: 'node', tooltip: 'Node' },
   { icon: 'react', tooltip: 'React' },
+  { icon: 'react-query', tooltip: 'React Query' },
   { icon: 'redux', tooltip: 'Redux' },
   { icon: 'redux-saga', tooltip: 'Redux Saga' },
   { icon: 'next', tooltip: 'Next' },
