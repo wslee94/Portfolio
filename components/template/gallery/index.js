@@ -5,6 +5,24 @@ export default function Gallery() {
   return (
     <div className={`section ${style.section_gallery}`}>
       <div className={style.container_image}>
+        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-event-olin2.png"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-event-olin2.gif"
+            layout="fill"
+          />
+        </div>
         <div className={[style.wrapper_image, style.full].join(' ')}>
           <p className={style.title_image}>FACEPLAY</p>
           <Image
