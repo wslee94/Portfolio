@@ -3,7 +3,7 @@ export const careerList = [
     id: 'ky',
     period: '2013.03 ~ 2019.02',
     logo: '/portfolio/assets/img/career/ky.svg',
-    desc: ['융합IT 전공', '평균 학점 3.91 / 4.50'],
+    desc: ['융합IT 전공(3.91/4.50)'],
   },
   {
     id: 'arrow',
@@ -23,6 +23,6 @@ export const careerList = [
     id: 'nexon',
     period: '2022.04 ~',
     logo: '/portfolio/assets/img/career/nexon.svg',
-    desc: ['인텔리전스랩스 프론트웹개발팀 소속', '게임 관련 FE 개발/유지보수'],
+    desc: ['(전)인텔리전스랩스 프론트웹개발팀', '(현)메이플그룹 메이플W 플랫폼유닛', '게임 관련 FE 개발/유지보수'],
   },
 ];

@@ -122,24 +122,6 @@ export default function Gallery() {
             layout="fill"
           />
         </div>
-        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/enter-wings-pride.gif"
-            layout="fill"
-          />
-        </div>
-        <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/enter-wings-pride-mobile.gif"
-            layout="fill"
-          />
-        </div>
       </div>
     </div>
   );

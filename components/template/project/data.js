@@ -1,8 +1,28 @@
 export const projectList = [
   {
+    title: 'MapleStory Worlds',
+    company: 'Nexon',
+    period: '2022.05 ~',
+    image: '/portfolio/assets/img/project/maplestoryworlds.svg',
+    description: '메이플스토리 월드는 누구나 자유롭게 게임 콘텐츠를 제작하고 플레이하는 플랫폼입니다.',
+    part: ['페이지 개발 및 UI/UX 개선', 'Youtube API를 이용한 쇼츠(뭐 할까?) 개발', '공통 컴포넌트 개발 및 유지보수'],
+    link: [
+      { text: '유투브 채널', href: 'https://www.youtube.com/@MapleStoryWorlds' },
+      { text: '소개영상', href: 'https://www.youtube.com/watch?v=uGvyjhemEVA' },
+      { text: '홈페이지', href: 'https://maplestoryworlds.nexon.com' },
+    ],
+    techList: [
+      { icon: 'html', tooltip: 'HTML5' },
+      { icon: 'css', tooltip: 'CSS3' },
+      { icon: 'javascript', tooltip: 'Javascript' },
+      { icon: 'vue', tooltip: 'Vue' },
+      { icon: 'nuxt', tooltip: 'Nuxt' },
+    ],
+  },
+  {
     title: 'FACEPLAY',
     company: 'Nexon',
-    period: '2022.12 ~',
+    period: '2022.12 ~ 2023.07',
     image: '/portfolio/assets/img/project/faceplay.svg',
     description:
       '화상 카메라를 이용해 멀리 떨어진 사람들과 쉽고 빠르게 파티 게임을 즐길 수 있는 종합 놀이 플랫폼입니다.',
@@ -25,26 +45,6 @@ export const projectList = [
       { icon: 'react', tooltip: 'React' },
       { icon: 'react-query', tooltip: 'React Query' },
       { icon: 'next', tooltip: 'Next' },
-    ],
-  },
-  {
-    title: 'MapleStory Worlds',
-    company: 'Nexon',
-    period: '2022.05 ~ 2022.11',
-    image: '/portfolio/assets/img/project/maplestoryworlds.svg',
-    description: '메이플스토리 월드는 누구나 자유롭게 게임 콘텐츠를 제작하고 플레이하는 플랫폼입니다.',
-    part: ['페이지 개발 및 UI/UX 개선', 'Youtube API를 이용한 쇼츠 개발'],
-    link: [
-      { text: '유투브 채널', href: 'https://www.youtube.com/@MapleStoryWorlds' },
-      { text: '소개영상', href: 'https://www.youtube.com/watch?v=uGvyjhemEVA' },
-      { text: '홈페이지', href: 'https://maplestoryworlds.nexon.com' },
-    ],
-    techList: [
-      { icon: 'html', tooltip: 'HTML5' },
-      { icon: 'css', tooltip: 'CSS3' },
-      { icon: 'javascript', tooltip: 'Javascript' },
-      { icon: 'vue', tooltip: 'Vue' },
-      { icon: 'nuxt', tooltip: 'Nuxt' },
     ],
   },
   {
