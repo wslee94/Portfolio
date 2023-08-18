@@ -46,6 +46,7 @@ export const projectList = [
       { icon: 'react-query', tooltip: 'React Query' },
       { icon: 'next', tooltip: 'Next' },
     ],
+    disabled: true,
   },
   {
     title: 'LawShot',

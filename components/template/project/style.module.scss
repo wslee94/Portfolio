@@ -53,6 +53,19 @@
     }
   }
 
+  .summary_end {
+    font-weight: 700;
+    font-size: 24px;
+
+    @include tablet {
+      font-size: 20px;
+    }
+
+    @include mobile {
+      font-size: 18px;
+    }
+  }
+
   .summary_company {
     font-weight: 700;
     font-size: 20px;
@@ -182,6 +195,11 @@
       font-size: 16px;
       line-height: 23px;
     }
+  }
+
+  .link_disabled {
+    pointer-events: none;
+    text-decoration: line-through;
   }
 }
 

@@ -13,7 +13,10 @@ export default function Project() {
         return (
           <div key={index} className={style.container}>
             <div className={style.wrapper_summary}>
-              <p className={style.summary_title}>{project.title}</p>
+              <p className={style.summary_title}>
+                {project.title}
+                {project.disabled && <span className={style.summary_end}>(서비스 종료)</span>}
+              </p>
               <span className={style.summary_company}>{project.company}</span>
               <span className={style.summary_period}>{project.period}</span>
               <div className={style.summary_image}>
@@ -42,7 +45,11 @@ export default function Project() {
               <ul>
                 {project.link.map((link, index) => (
                   <li key={index}>
-                    <a className={style.link_desc} href={link.href} target="_blink">
+                    <a
+                      className={!project.disabled ? style.link_desc : `${style.link_desc} ${style.link_disabled}`}
+                      href={link.href}
+                      target="_blink"
+                    >
                       {link.text}
                     </a>
                   </li>
