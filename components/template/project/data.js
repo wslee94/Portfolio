@@ -5,7 +5,13 @@ export const projectList = [
     period: '2022.05 ~',
     image: '/portfolio/assets/img/project/maplestoryworlds.svg',
     description: '메이플스토리 월드는 누구나 자유롭게 게임 콘텐츠를 제작하고 플레이하는 플랫폼입니다.',
-    part: ['페이지 개발 및 UI/UX 개선', 'Youtube API를 이용한 쇼츠(뭐 할까?) 개발', '공통 컴포넌트 개발 및 유지보수'],
+    part: [
+      '페이지 개발 및 UI/UX 개선',
+      'Youtube API를 이용한 쇼츠(뭐 할까?) 개발',
+      '설정(계정정보, 자녀보호기능, 콘텐츠제어) 개발',
+      '공통 컴포넌트 개발 및 유지보수',
+      '이벤트 페이지 개발',
+    ],
     link: [
       { text: '유투브 채널', href: 'https://www.youtube.com/@MapleStoryWorlds' },
       { text: '소개영상', href: 'https://www.youtube.com/watch?v=uGvyjhemEVA' },

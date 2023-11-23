@@ -5,8 +5,35 @@ export default function Gallery() {
   return (
     <div className={`section ${style.section_gallery}`}>
       <div className={style.container_image}>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>Event Page - 신규 월드</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-event-new-worlds.gif"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.half].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - 설정</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-parental-control-1.png"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.half].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - 설정</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-parental-control-2.png"
+            layout="fill"
+          />
+        </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <p className={style.title_image}>Event Page - 어린이날</p>
           <Image
             alt="project image"
             className={style.image}
@@ -15,7 +42,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <p className={style.title_image}>Event Page - 어린이날</p>
           <Image
             alt="project image"
             className={style.image}
@@ -23,44 +50,8 @@ export default function Gallery() {
             layout="fill"
           />
         </div>
-        <div className={[style.wrapper_image, style.full].join(' ')}>
-          <p className={style.title_image}>FACEPLAY</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/faceplay-profile.jpg"
-            layout="fill"
-          />
-        </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>FACEPLAY</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/faceplay-content.jpg"
-            layout="fill"
-          />
-        </div>
-        <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>FACEPLAY</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/faceplay-content-mobile.jpg"
-            layout="fill"
-          />
-        </div>
-        <div className={[style.wrapper_image, style.full].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/msw-avatar.gif"
-            layout="fill"
-          />
-        </div>
-        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds</p>
+          <p className={style.title_image}>MapleStory Worlds - 쇼츠</p>
           <Image
             alt="project image"
             className={style.image}
@@ -69,7 +60,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds</p>
+          <p className={style.title_image}>MapleStory Worlds - 쇼츠</p>
           <Image
             alt="project image"
             className={style.image}
@@ -77,17 +68,8 @@ export default function Gallery() {
             layout="fill"
           />
         </div>
-        <div className={[style.wrapper_image, style.full].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
-          <Image
-            alt="project image"
-            className={style.image}
-            src="/portfolio/assets/img/gallery/enter-invitation.png"
-            layout="fill"
-          />
-        </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <p className={style.title_image}>Event Page - 크리에이터</p>
           <Image
             alt="project image"
             className={style.image}
@@ -96,7 +78,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <p className={style.title_image}>Event Page - 크리에이터</p>
           <Image
             alt="project image"
             className={style.image}
@@ -104,8 +86,53 @@ export default function Gallery() {
             layout="fill"
           />
         </div>
-        <div className={[style.wrapper_image, style.half].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - 홈</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-avatar.gif"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+          <p className={style.title_image}>FACEPLAY - 콘텐츠</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-content.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.quater].join(' ')}>
+          <p className={style.title_image}>FACEPLAY - 콘텐츠</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-content-mobile.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>FACEPLAY - 프로필</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/faceplay-profile.jpg"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>Event Page - 친구 초대</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/enter-invitation.png"
+            layout="fill"
+          />
+        </div>
+        {/* <div className={[style.wrapper_image, style.half].join(' ')}>
+          <p className={style.title_image}>Event Page</p>
           <Image
             alt="project image"
             className={style.image}
@@ -114,14 +141,14 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.half].join(' ')}>
-          <p className={style.title_image}>MapleStory Worlds - Event Page</p>
+          <p className={style.title_image}>Event Page</p>
           <Image
             alt="project image"
             className={style.image}
             src="/portfolio/assets/img/gallery/enter-newsletter.png"
             layout="fill"
           />
-        </div>
+        </div> */}
       </div>
     </div>
   );
