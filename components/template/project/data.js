@@ -10,6 +10,7 @@ export const projectList = [
       'Youtube API를 이용한 쇼츠(뭐 할까?) 개발',
       '설정(계정정보, 자녀보호기능, 콘텐츠제어) 개발',
       '공통 컴포넌트 개발 및 유지보수',
+      'Nuxt 2 → Nuxt 3 이관',
       '이벤트 페이지 개발',
     ],
     link: [
@@ -21,6 +22,7 @@ export const projectList = [
       { icon: 'html', tooltip: 'HTML5' },
       { icon: 'css', tooltip: 'CSS3' },
       { icon: 'javascript', tooltip: 'Javascript' },
+      { icon: 'typescript', tooltip: 'Typescript' },
       { icon: 'vue', tooltip: 'Vue' },
       { icon: 'nuxt', tooltip: 'Nuxt' },
     ],
