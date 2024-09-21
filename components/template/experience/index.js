@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import style from './style.module.scss';
 import { experienceList } from './data';
 import TechIcon from '../../tech-icon';
@@ -25,16 +24,19 @@ export default function Experience() {
             ) : (
               <p className={style.content_description}>{exp.content}</p>
             )}
-            <ul className={style.list_link}>
-              {exp.link.map((link, index) => (
-                <li key={index}>
-                  <Link className={style.icon_link} />
-                  <a className={style.link_description} href={link.href} target="_blink">
-                    {link.text}
-                  </a>
-                </li>
-              ))}
-            </ul>
+            {exp.link.length > 0 ? (
+              <ul className={style.list_link}>
+                {exp.link.map((link, index) => (
+                  <li key={index}>
+                    <Link className={style.icon_link} />
+                    <a className={style.link_description} href={link.href} target="_blink">
+                      {link.text}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+
             <ul className={style.list_tech}>
               {exp.techList.map((n) => (
                 <li key={n.icon}>

@@ -1,5 +1,27 @@
 export const projectList = [
   {
+    title: 'HelloMaple',
+    company: 'Nexon',
+    period: '2024.05 ~',
+    image: '/portfolio/assets/img/project/hellomaple.svg',
+    description:
+      '메이플스토리 IP를 활용해 프로그래밍에 관심을 가진 학생들이 쉽게 코딩을 접할 수 있도록 다양한 기능과 콘텐츠를 제공하는 플랫폼입니다.',
+    part: ['유저 관리, 운영 백오피스 신규 개발 및 유지보수', '백오피스 인증(OAuth) & 인가(권한) 개발'],
+    link: [
+      { text: '유투브 채널', href: 'https://youtube.com/channel/UChFCQ6ULqJ8ZWx9S1R5iz0Q?si=11m-ThHdFM3j2lbq' },
+      { text: '소개영상', href: 'https://youtu.be/cVWPMNxnisc?si=DNRhqlaLmEkhpWGU' },
+      { text: '홈페이지', href: 'https://www.hellomaple.org/' },
+    ],
+    techList: [
+      { icon: 'html', tooltip: 'HTML5' },
+      { icon: 'css', tooltip: 'CSS3' },
+      { icon: 'javascript', tooltip: 'Javascript' },
+      { icon: 'typescript', tooltip: 'Typescript' },
+      { icon: 'vue', tooltip: 'Vue' },
+      { icon: 'nuxt', tooltip: 'Nuxt' },
+    ],
+  },
+  {
     title: 'MapleStory Worlds',
     company: 'Nexon',
     period: '2022.05 ~',
@@ -10,6 +32,7 @@ export const projectList = [
       'Youtube API를 이용한 쇼츠(뭐 할까?) 개발',
       '설정(계정정보, 자녀보호기능, 콘텐츠제어) 개발',
       '공통 컴포넌트 개발 및 유지보수',
+      '백오피스 개발 및 유지보수',
       'Nuxt 2 → Nuxt 3 이관',
       '이벤트 페이지 개발',
     ],

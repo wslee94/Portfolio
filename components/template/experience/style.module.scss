@@ -81,18 +81,19 @@
 .content_description {
   font-weight: 400;
   font-size: 20px;
-  line-height: 28px;
+  line-height: 30px;
   color: #D8D8D8;
+  white-space: pre-line;
 
 
   @include tablet {
     font-size: 18px;
-    line-height: 24px;
+    line-height: 26px;
   }
 
   @include mobile {
     font-size: 16px;
-    line-height: 20px;
+    line-height: 22px;
   }
 }
 
