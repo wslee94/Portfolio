@@ -6,11 +6,20 @@ export default function Gallery() {
     <div className={`section ${style.section_gallery}`}>
       <div className={style.container_image}>
         <div className={[style.wrapper_image, style.full].join(' ')}>
-          <p className={style.title_image}>Event Page - 신규 월드</p>
+          <p className={style.title_image}>MapleStory Worlds - 신규 월드 이벤트</p>
           <Image
             alt="project image"
             className={style.image}
             src="/portfolio/assets/img/gallery/msw-event-new-worlds.gif"
+            layout="fill"
+          />
+        </div>
+        <div className={[style.wrapper_image, style.full].join(' ')}>
+          <p className={style.title_image}>MapleStory Worlds - 공지사항</p>
+          <Image
+            alt="project image"
+            className={style.image}
+            src="/portfolio/assets/img/gallery/msw-community.png"
             layout="fill"
           />
         </div>
@@ -33,7 +42,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
-          <p className={style.title_image}>Event Page - 어린이날</p>
+          <p className={style.title_image}>MapleStory Worlds - 어린이날 이벤트</p>
           <Image
             alt="project image"
             className={style.image}
@@ -42,7 +51,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.quater].join(' ')}>
-          <p className={style.title_image}>Event Page - 어린이날</p>
+          <p className={style.title_image}>MapleStory Worlds - 어린이날 이벤트</p>
           <Image
             alt="project image"
             className={style.image}
@@ -68,7 +77,7 @@ export default function Gallery() {
             layout="fill"
           />
         </div>
-        <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
+        {/* <div className={[style.wrapper_image, style.tree_quaters].join(' ')}>
           <p className={style.title_image}>Event Page - 크리에이터</p>
           <Image
             alt="project image"
@@ -85,7 +94,7 @@ export default function Gallery() {
             src="/portfolio/assets/img/gallery/enter-wings-dev-mobile.gif"
             layout="fill"
           />
-        </div>
+        </div> */}
         <div className={[style.wrapper_image, style.full].join(' ')}>
           <p className={style.title_image}>MapleStory Worlds - 홈</p>
           <Image
@@ -123,7 +132,7 @@ export default function Gallery() {
           />
         </div>
         <div className={[style.wrapper_image, style.full].join(' ')}>
-          <p className={style.title_image}>Event Page - 친구 초대</p>
+          <p className={style.title_image}>MapleStory Worlds - 친구 초대 이벤트</p>
           <Image
             alt="project image"
             className={style.image}
